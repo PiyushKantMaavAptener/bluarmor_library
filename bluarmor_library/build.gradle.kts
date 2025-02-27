@@ -37,8 +37,11 @@ android {
 
 dependencies {
 
-    implementation(files("libs/bluconnect.aar"))
-    implementation(files("libs/rtk-bbpro.aar"))
+//    implementation(files("libs/bluconnect.aar"))
+//    implementation(files("libs/rtk-bbpro.aar"))
+
+    implementation(project(":bluconnect"))
+    implementation(project(":rtk-bbpro"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
