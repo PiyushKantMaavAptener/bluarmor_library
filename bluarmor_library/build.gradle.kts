@@ -37,11 +37,11 @@ android {
 
 dependencies {
 
-//    implementation(files("libs/bluconnect.aar"))
+    implementation(files("libs/bluconnect.aar"))
 //    implementation(files("libs/rtk-bbpro.aar"))
 
-    implementation(project(":bluconnect"))
-    implementation(project(":rtk-bbpro"))
+//    implementation(project(":bluconnect"))
+//    implementation(project(":rtk-bbpro"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -97,7 +97,7 @@ publishing {
             }
 
             artifact("libs/bluconnect.aar")
-            artifact("libs/rtk-bbpro.aar")
+//            artifact("libs/rtk-bbpro.aar")
         }
     }
 }
