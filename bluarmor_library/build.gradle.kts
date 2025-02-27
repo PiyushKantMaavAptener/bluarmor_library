@@ -84,7 +84,18 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("release") {}
+        create<MavenPublication>("release") {
+            groupId = "com.aptener" // Change this based on your organization
+            artifactId = "bluarmor_library" // Change this based on your library name
+            version = "1.0.0" // Update the version as needed
+
+            afterEvaluate {
+                from(components["release"])
+            }
+
+            artifact("libs/bluconnect.aar")
+            artifact("libs/rtk-bbpro.aar")
+        }
     }
 }
 
