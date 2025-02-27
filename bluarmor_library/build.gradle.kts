@@ -50,39 +50,39 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-
-    implementation("com.google.code.gson:gson:2.11.0")
-
-    implementation("com.google.dagger:dagger:2.51.1")
-
-    implementation("com.google.zxing:core:3.5.3")
-    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
-
-    implementation("com.jakewharton.timber:timber:5.0.1")
-
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
-    implementation ("com.google.accompanist:accompanist-permissions:0.34.0")
-    implementation ("com.google.accompanist:accompanist-flowlayout:0.34.0")
-    implementation("com.google.android.gms:play-services-auth:21.2.0")
-
-
-    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
-    implementation("com.google.firebase:firebase-config-ktx")
-    implementation("com.google.firebase:firebase-storage-ktx")
-    implementation("com.google.firebase:firebase-analytics-ktx")
-    implementation("com.google.firebase:firebase-firestore-ktx")
-
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
-    implementation("com.google.android.gms:play-services-location:21.3.0")
-
-    implementation("androidx.room:room-runtime:2.6.1")
-//    ksp("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-
-    implementation("no.nordicsemi.android:ble-ktx:2.7.5")
-    implementation("no.nordicsemi.android.support.v18:scanner:1.6.0")
-    implementation("no.nordicsemi.android:dfu:2.5.0")
-    implementation("com.google.protobuf:protobuf-javalite:4.26.1")
+//
+//    implementation("com.google.code.gson:gson:2.11.0")
+//
+//    implementation("com.google.dagger:dagger:2.51.1")
+//
+//    implementation("com.google.zxing:core:3.5.3")
+//    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+//
+//    implementation("com.jakewharton.timber:timber:5.0.1")
+//
+//    implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
+//    implementation ("com.google.accompanist:accompanist-permissions:0.34.0")
+//    implementation ("com.google.accompanist:accompanist-flowlayout:0.34.0")
+//    implementation("com.google.android.gms:play-services-auth:21.2.0")
+//
+//
+//    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+//    implementation("com.google.firebase:firebase-config-ktx")
+//    implementation("com.google.firebase:firebase-storage-ktx")
+//    implementation("com.google.firebase:firebase-analytics-ktx")
+//    implementation("com.google.firebase:firebase-firestore-ktx")
+//
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
+//    implementation("com.google.android.gms:play-services-location:21.3.0")
+//
+//    implementation("androidx.room:room-runtime:2.6.1")
+////    ksp("androidx.room:room-compiler:2.6.1")
+//    implementation("androidx.room:room-ktx:2.6.1")
+//
+//    implementation("no.nordicsemi.android:ble-ktx:2.7.5")
+//    implementation("no.nordicsemi.android.support.v18:scanner:1.6.0")
+//    implementation("no.nordicsemi.android:dfu:2.5.0")
+//    implementation("com.google.protobuf:protobuf-javalite:4.26.1")
 }
 
 publishing {
@@ -90,7 +90,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.aptener" // Change this based on your organization
             artifactId = "bluarmor_library" // Change this based on your library name
-            version = "1.0.0" // Update the version as needed
+            version = "1.0.4" // Update the version as needed
 
             afterEvaluate {
                 from(components["release"])
