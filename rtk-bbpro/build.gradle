@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('rtk-bbpro-1.12.9.aar'))

@@ -22,5 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "BluarmorAndroidLibrary"
 include(":app")
 include(":bluarmor_library")
-include(":bluconnect")
+include(":bluConnect")
 include(":rtk-bbpro")
