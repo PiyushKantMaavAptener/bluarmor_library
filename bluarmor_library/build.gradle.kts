@@ -2,8 +2,6 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     id("maven-publish")
-
-
 }
 
 android {
@@ -97,7 +95,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.aptener" // Change this based on your organization
             artifactId = "bluarmor_library" // Change this based on your library name
-            version = "1.0.4" // Update the version as needed
+            version = "1.0.8" // Update the version as needed
 
             afterEvaluate {
                 from(components["release"])
