@@ -95,7 +95,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.aptener" // Change this based on your organization
             artifactId = "bluarmor_library" // Change this based on your library name
-            version = "1.0.8" // Update the version as needed
+            version = "1.0.9" // Update the version as needed
 
             afterEvaluate {
                 from(components["release"])
