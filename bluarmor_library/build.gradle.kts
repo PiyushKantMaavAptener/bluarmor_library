@@ -43,6 +43,7 @@ dependencies {
 
     api(project(":bluConnect"))
     api(project(":rtk-bbpro"))
+
 //    implementation(files("libs/bluconnect.aar"))
 //    implementation(files("libs/rtk-bbpro.aar"))
 

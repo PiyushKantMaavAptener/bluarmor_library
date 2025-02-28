@@ -10,8 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bluConnect" />
             <option value="$PROJECT_DIR$/bluarmor_library" />
-            <option value="$PROJECT_DIR$/bluconnect" />
             <option value="$PROJECT_DIR$/rtk-bbpro" />
           </set>
         </option>
