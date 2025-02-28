@@ -40,6 +40,9 @@ dependencies {
 
     implementation(project(":bluConnect", configuration = "default"))
     implementation(project(path = ":rtk-bbpro"))
+
+    api(project(":bluConnect"))
+    api(project(":rtk-bbpro"))
 //    implementation(files("libs/bluconnect.aar"))
 //    implementation(files("libs/rtk-bbpro.aar"))
 
